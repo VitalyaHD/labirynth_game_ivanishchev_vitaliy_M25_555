@@ -2,7 +2,7 @@ install:
 	poetry install
 
 project:
-	poetry rub project
+	poetry run project
 
 build:
 	poetry build
@@ -14,4 +14,4 @@ package-install:
 	python -m pip install dist/labyrinth_game_ivanishchev_vitaly_m25_555-0.1.0-py3-none-any.whl
 
 lint:
-	poetry runn ruff check .
+	poetry run ruff check .
