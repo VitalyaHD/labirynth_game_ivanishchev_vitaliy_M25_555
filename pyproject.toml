@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "labyrinth_game_ivanishchev_vitaly_M25_555"
+version = "0.1.0"
+description = "Текстовая приключенческая игра - Лабиринт сокровищ"
+authors = ["Иванищев Виталий ivanishchevvm@mail.ru"]
+
+packages = [
+    { include = "labyrinth_game" },
+]
+
+[tool.poetry.scripts]
+project = "labyrinth_game.main:main"
+
+[tool.poetry.dependencies]
+python = "3.12.10"
+
+[tool.poetry.group.dev.dependencies]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
